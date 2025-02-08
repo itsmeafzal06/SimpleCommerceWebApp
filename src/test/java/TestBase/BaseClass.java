@@ -17,6 +17,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -33,6 +34,10 @@ public class BaseClass {
 	@BeforeClass
 	@Parameters({"os","browser"})
 	public void setup(String os, String br) throws IOException {
+		
+		ChromeOptions op = new ChromeOptions();
+		File filef = new File("D:\\JAVA_Seleniun_Workspace\\crx files\\uBlock-Origin-Chrome-Web-Store.crx");
+		op.addExtensions(filef);
 		
 		FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//confi.properties");
 		p=new Properties();
@@ -78,7 +83,7 @@ public class BaseClass {
 		
 		if(p.getProperty("environment").equalsIgnoreCase("local")) {
 			switch (br.toLowerCase()) {
-			case "chrome":driver=new ChromeDriver();break;
+			case "chrome":driver=new ChromeDriver(op);break;
 			case "firefox":driver=new FirefoxDriver();break;	
 			case "edge":driver=new EdgeDriver();break;
 			default:System.out.println("Invalid browser");break;

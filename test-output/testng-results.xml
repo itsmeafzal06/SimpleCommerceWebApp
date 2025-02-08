@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-08T00:26:12 IST" name="Master" finished-at="2025-01-08T00:26:23 IST" duration-ms="10889">
+  <suite started-at="2025-02-07T16:26:44 IST" name="Master" finished-at="2025-02-07T16:27:18 IST" duration-ms="34106">
     <groups>
     </groups>
-    <test started-at="2025-01-08T00:26:12 IST" name="Test" finished-at="2025-01-08T00:26:23 IST" duration-ms="10889">
-      <class name="TestCases.TC003_SearchBar">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TC003_SearchBar@6f80fafe]" started-at="2025-01-08T00:26:13 IST" name="setup" finished-at="2025-01-08T00:26:17 IST" duration-ms="3883" status="PASS">
+    <test started-at="2025-02-07T16:26:44 IST" name="Test" finished-at="2025-02-07T16:27:18 IST" duration-ms="34106">
+      <class name="TestCases.TC004_BuyingProduct">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TC004_BuyingProduct@6f80fafe]" started-at="2025-02-07T16:26:45 IST" name="setup" finished-at="2025-02-07T16:26:52 IST" duration-ms="7177" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,20 +23,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestSearch()[pri:0, instance:TestCases.TC003_SearchBar@6f80fafe]" started-at="2025-01-08T00:26:17 IST" name="TestSearch" finished-at="2025-01-08T00:26:23 IST" duration-ms="6202" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="TestBuyingProduct()[pri:0, instance:TestCases.TC004_BuyingProduct@6f80fafe]" started-at="2025-02-07T16:26:52 IST" name="TestBuyingProduct" finished-at="2025-02-07T16:27:18 IST" duration-ms="25841" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [Esprit Ruffle Shirt] but found [Esprit RuffleShirt]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[.='Congratulation!']"}
+  (Session info: chrome=132.0.6834.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a91df7928b22756ee47e92dd0f475657, findElement {value=//h2[.='Congratulation!'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\mohda\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50962/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a91df7928b22756ee47e92dd0f475657]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Esprit Ruffle Shirt] but found [Esprit RuffleShirt]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at TestCases.TC003_SearchBar.TestSearch(TC003_SearchBar.java:31)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[.='Congratulation!']"}
+  (Session info: chrome=132.0.6834.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a91df7928b22756ee47e92dd0f475657, findElement {value=//h2[.='Congratulation!'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\mohda\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50962/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a91df7928b22756ee47e92dd0f475657
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy30.getText(Unknown Source)
+at PageObjects.ConfirmationPage.txt_Cong(ConfirmationPage.java:21)
+at TestCases.TC004_BuyingProduct.TestBuyingProduct(TC004_BuyingProduct.java:59)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,15 +97,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestSearch -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.TC003_SearchBar@6f80fafe]" started-at="2025-01-08T00:26:23 IST" name="teardown" finished-at="2025-01-08T00:26:23 IST" duration-ms="329" status="PASS">
+        </test-method> <!-- TestBuyingProduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.TC004_BuyingProduct@6f80fafe]" started-at="2025-02-07T16:27:18 IST" name="teardown" finished-at="2025-02-07T16:27:18 IST" duration-ms="704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- TestCases.TC003_SearchBar -->
+      </class> <!-- TestCases.TC004_BuyingProduct -->
     </test> <!-- Test -->
   </suite> <!-- Master -->
 </testng-results>

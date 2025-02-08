@@ -8,13 +8,13 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="TestCases.TC003_SearchBar">
+      <class name="TestCases.TC004_BuyingProduct">
         <methods>
-          <include name="TestSearch"/>
           <include name="setup"/>
           <include name="teardown"/>
+          <include name="TestBuyingProduct"/>
         </methods>
-      </class> <!-- TestCases.TC003_SearchBar -->
+      </class> <!-- TestCases.TC004_BuyingProduct -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master] -->

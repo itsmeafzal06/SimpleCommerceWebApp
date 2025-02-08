@@ -28,7 +28,7 @@ public class TC003_SearchBar extends BaseClass {
 		Thread.sleep(3000);
 		hp.search_btn();
 		
-		Assert.assertEquals("Esprit Ruffle Shirt" ,sp.item());
+		Assert.assertEquals("Esprit Ruffle Shirt" ,sp.itemT());
 		
 		}
 		catch(Exception e) {

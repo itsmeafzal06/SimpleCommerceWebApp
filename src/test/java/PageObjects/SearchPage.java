@@ -3,6 +3,7 @@ package PageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 
 public class SearchPage extends BasePage {
 
@@ -13,10 +14,17 @@ public class SearchPage extends BasePage {
 
 	//locators
 	
-	@FindBy(xpath="//h5[.='Esprit Ruffle Shirt']") WebElement img_shirt;
+	@FindBy(xpath="//h5[.='iPhone 6s 16GB toto']") WebElement img_itemT;
+	@FindBy(xpath="//img[@alt='iPhone 6s 16GB toto']") WebElement img_itemC;
 	
-	public String item() {
-		String text=img_shirt.getText();
+	//Actions
+	
+	public String itemT() {
+		String text=img_itemT.getText();
 		return text;
+	}
+	
+	public void itemC() {
+		img_itemC.click();
 	}
 }
